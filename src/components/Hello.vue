@@ -21,7 +21,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { login } from '@/service/getData'
+// import axios from 'axios'
 
 export default {
   name: 'hello',
@@ -29,6 +30,16 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created(){
+    login({accesstoken: '837e20cc-aee2-4673-99fe-dc99f98a73fc'}).then(res => {
+      console.log(res);
+    })
+    // axios.post('https://www.vue-js.com/api/v1/accesstoken', {
+    //     accesstoken: '837e20cc-aee2-4673-99fe-dc99f98a73fc'
+    // }).then(res => {
+    //   console.log(res);
+    // })
   }
 }
 </script>
