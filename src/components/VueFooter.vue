@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import warpper from '@/components/warpper'
+import warpper from '@/components/Warpper'
 
 export default {
     data() {
@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
     .footer{
-        height: 4rem;
         bottom: 0;
         box-shadow: 0 -0.2rem 0.2rem #ccc;
     }

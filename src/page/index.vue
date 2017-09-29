@@ -11,6 +11,7 @@
 <script>
 import vueHeader from '@/components/VueHeader'
 import vueFooter from '@/components/VueFooter'
+import { reqTopic } from '@/service/getData'
 
 export default {
     data() {
@@ -23,6 +24,11 @@ export default {
         vueHeader,
         // 底部
         vueFooter
+    },
+    watch: {
+        $route(newValue) {
+            console.log(newValue)
+        }
     }
 }
 </script>

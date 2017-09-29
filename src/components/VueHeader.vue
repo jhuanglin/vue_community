@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import warpper from '@/components/warpper'
+import warpper from '@/components/Warpper'
 
 export default {
     data(){

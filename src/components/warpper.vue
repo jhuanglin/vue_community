@@ -2,7 +2,7 @@
     <div class="warpper">
         <slot name="icon"></slot>
         <div class="nav">
-            <router-link class="nav-tip" v-for="(item, index) in options" :key="item.value" @click.native="jumpTo(index,item.value,item.name)" :style="liStyle" :to="{}">{{ item.title }}</router-link>
+            <a class="nav-tip" v-for="(item, index) in options" :key="item.value" @click.native="jumpTo(index,item.value,item.name)" :style="liStyle">{{ item.title }}</a>
             <span v-if="linkHighLight" class="link-highlight" ref="linkHighLIght" :style="liStyle"></span>
         </div>
   </div>
@@ -13,7 +13,7 @@ export default {
         return {
             liStyle: {
                 width: 100 / this.options.length + '%'
-            }
+            },
         }
     },
     props: {
