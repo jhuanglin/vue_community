@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { login } from '@/service/getData'
+// import { login } from '@/service/getData'
 // import axios from 'axios'
 
 export default {
@@ -32,9 +32,9 @@ export default {
     }
   },
   created(){
-    login({accesstoken: '837e20cc-aee2-4673-99fe-dc99f98a73fc'}).then(res => {
-      console.log(res);
-    })
+    // login({accesstoken: '837e20cc-aee2-4673-99fe-dc99f98a73fc'}).then(res => {
+    //   console.log(res);
+    // })
     // axios.post('https://www.vue-js.com/api/v1/accesstoken', {
     //     accesstoken: '837e20cc-aee2-4673-99fe-dc99f98a73fc'
     // }).then(res => {

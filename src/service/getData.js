@@ -1,4 +1,4 @@
-import ajax from '@/utils/axios'
+import ajax from '@/utils/ajax'
 
 const REQUEST_TYPE = 'ajax'
 
