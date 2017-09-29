@@ -69,6 +69,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '../assets/sass/warpper.scss';
+
 .warpper {
     display: flex;
     flex-direction: column;
@@ -76,13 +78,9 @@ export default {
     position: relative;
 
     .header {
+        @include warpper;
         height: 5rem;
-        width: 100%;
-        background-color: #fff;
-        position: fixed;
         top: 0;
-        text-align: center;
-        box-shadow: 0 0.3rem 0.6rem #ccc;
 
         .header-title {
             line-height: 5rem;

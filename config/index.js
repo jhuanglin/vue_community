@@ -28,10 +28,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/vueJs':{
+      '/vuejs':{
           target: 'https://www.vue-js.com/api/',
           pathRewrite: {
-            '^/vueJs' : '/vueJs'
+            '^/vuejs' : '/vuejs'
           }
       }
     },
