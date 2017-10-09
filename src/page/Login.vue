@@ -41,6 +41,7 @@ export default {
             login(info).then(res => {
                 if (res.success) {
                     this.isWraning = false;
+                    this.$setStore('username', res.loginname);
                     // 登录成功
                     this.tipmessage = "登录成功";
                     this.triggerTip(true);
@@ -59,7 +60,7 @@ export default {
             setTimeout(() => {
                 this.tipShow = false;
                 if(status){
-                    this.$router.push('/myIndex');
+                    this.$router.push('/my');
                 }
             }, 2000);
         }

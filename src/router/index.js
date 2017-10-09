@@ -32,6 +32,10 @@ export default new Router({
       path: '/message',
       name: 'Message',
       component: Message
+    },{
+      path: '/hello',
+      name: 'Hello',
+      component: Hello
     }
   ]
 })

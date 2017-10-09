@@ -9,8 +9,12 @@ if(REQUEST_TYPE === 'ajax') {
 
     // 发送topic主题请求
     var reqTopic = (info) => ajax('GET', 'https://www.vue-js.com/api/v1/topics', info);
+
+    // 发送user信息请求
+    var getUserInfo = (username) => ajax('GET', 'https://www.vue-js.com/api/v1/user/'+username);
 }
 
 export {
-    login
+    login,
+    getUserInfo
 }

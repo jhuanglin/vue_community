@@ -27,7 +27,6 @@ export default {
     },
     watch: {
         $route(newValue) {
-            console.log(newValue)
         }
     }
 }
