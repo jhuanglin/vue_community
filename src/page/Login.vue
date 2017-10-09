@@ -52,7 +52,7 @@ export default {
             })
         },
         noLogin() {
-            this.$router.push('/index');
+            this.$router.push('/index?tab=all');
         },
         triggerTip(status) {
             this.tipShow = !this.tipShow;

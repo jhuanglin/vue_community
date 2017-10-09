@@ -38,9 +38,9 @@ export default {
         }
     },
     methods: {
-        jumpTo(index){
-            this.$refs.linkHighLIght.style.left = index * 20 + '%';
-        }
+        // jumpTo(index){
+        //     this.$refs.linkHighLIght.style.left = index * 20 + '%';
+        // }
     },
     components: {
         warpper
