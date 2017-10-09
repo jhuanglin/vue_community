@@ -29,9 +29,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/vuejs':{
-          target: 'https://www.vue-js.com/api/',
+          target: 'http://www.vue-js.com/api',
+          changeOrigin: true,
           pathRewrite: {
-            '^/vuejs' : '/vuejs'
+            '^/vuejs' : ''
           }
       }
     },

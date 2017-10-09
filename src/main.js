@@ -4,6 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+/**
+ * 封装localStorage操作
+ */
+import { setStore, getStore, removeStore} from './utils/utils'
+
+Vue.prototype.$setStore = setStore;
+Vue.prototype.$getStore = getStore;
+Vue.prototype.$removeStore = removeStore;
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
