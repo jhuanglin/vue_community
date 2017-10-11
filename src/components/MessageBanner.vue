@@ -1,7 +1,12 @@
 <template>
   <div class="message-banner">
       <p class="banner">{{ banner }}</p>
-      <div v-if="content.length > 0" class="content"></div>
+      <div v-if="content.length > 0" class="content">
+        <div  class="contentlist clearfix" v-for="(item, index) in content" :key="item.id">
+          <a :href="'/content?'+item.id" >{{ item.title }}</a>
+          <span>{{ item.last_reply_at }}</span>  
+        </div>
+      </div>
       <div v-else class="content">
         {{ banner }}数目为0
       </div>
@@ -48,6 +53,30 @@ export default {
       font-size: 1.3rem;
       padding: 1rem;
     }
+
+    .contentlist{
+      padding-bottom: 0.3rem;
+      border-bottom: 1px dotted #ccc;  
+
+      a{
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: gray;
+        cursor: pointer;
+      }
+      span{
+        float: right;      
+        margin-top: 0.5rem; 
+      }
+    }
+  }
+
+  .clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
   }
 
 </style>

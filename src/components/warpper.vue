@@ -48,7 +48,7 @@ export default {
          */
         jumpTo(index,value,name){
             if(this.linkHighLight){
-                this.$refs.linkHighLIght.style.left = index * ( 100 / this.options.length ) + '%';
+                this.$refs.linkHighLight.style.left = index * ( 100 / this.options.length ) + '%';
             }
             if(this.position === 'header') {
                 this.$router.push({

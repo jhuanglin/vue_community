@@ -36,7 +36,7 @@ export default {
     //   console.log(res);
     // })
     axios.post('https://www.vue-js.com/api/v1/accesstoken', {
-        accesstoken: '837e20cc-aee2-4673-99fe-dc99f98a73fc'
+        accesstoken: '  '
     }).then(res => {
       console.log(res);
     })

@@ -19,7 +19,7 @@ npm run build
 ## todoList
 - [x] ajax请求(promise)
 - [x] 登录功能
-- [ ] 个人界面
+- [x] 个人界面
 - [x] 首页-头部
 - [x] 首页-尾部
 - [ ] 首页文章
