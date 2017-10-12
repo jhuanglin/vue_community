@@ -42,6 +42,7 @@ export default {
                 if (res.success) {
                     this.isWraning = false;
                     this.$setStore('username', res.loginname);
+                    this.$setStore('accesstoken', this.user_token);
                     // 登录成功
                     this.tipmessage = "登录成功";
                     this.triggerTip(true);

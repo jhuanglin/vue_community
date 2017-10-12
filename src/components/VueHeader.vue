@@ -20,7 +20,7 @@ export default {
                 },{
                     title: '精华',
                     name: 'Index',
-                    value: 'essence'
+                    value: 'good'
                 },{
                     title: '分享',
                     name: 'Index',

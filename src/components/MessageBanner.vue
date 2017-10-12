@@ -59,7 +59,7 @@ export default {
       border-bottom: 1px dotted #ccc;  
 
       a{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-decoration: none;
         color: gray;
         cursor: pointer;

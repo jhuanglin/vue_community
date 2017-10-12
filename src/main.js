@@ -7,11 +7,15 @@ import router from './router'
 /**
  * 封装localStorage操作
  */
-import { setStore, getStore, removeStore} from './utils/utils'
+import { setStore, getStore, removeStore, formatDate} from './utils/utils'
 
 Vue.prototype.$setStore = setStore;
 Vue.prototype.$getStore = getStore;
 Vue.prototype.$removeStore = removeStore;
+
+
+// 实例化Vue的过滤器 
+Vue.filter('formatDate', formatDate);
 
 Vue.config.productionTip = false
 
